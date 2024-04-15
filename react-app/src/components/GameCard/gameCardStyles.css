@@ -35,12 +35,17 @@
   width:100%;
 }
 
+.game-buttons-wrapper img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
 
-.game-images-wrapper img {
-  display:flex;
-  flex-direction:column;
+.game-buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
   align-items: center;
-  justify-content:center;
 }
 
 .description-only {
@@ -50,13 +55,6 @@
 }
 
 
-.game-buttons-wrapper {
-  display:flex;
-  flex-direction:column;
-  gap:3px;
-  width:100px;
-
-}
 
 .game-info-and-buttons-wrapper {
   /* border: 4px solid red; */
