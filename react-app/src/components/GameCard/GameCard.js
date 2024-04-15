@@ -10,6 +10,7 @@ const GameCard = ({ gameImages, gameTitle, gameDescription, backgroundImage }) =
     backgroundPosition: 'center',
     width:'20px'
   };
+  console.log('something')
 
   const isTwoByTwoGrid = gameImages.length === 4;
   console.log('blossom length', gameImages, isTwoByTwoGrid)
