@@ -10,7 +10,7 @@ const GameCard = ({ gameImages, gameTitle, gameDescription, backgroundImage }) =
     backgroundPosition: 'center',
     width:'20px'
   };
- 
+
 
   const isTwoByTwoGrid = gameImages.length === 4;
   console.log('blossom length', gameImages, isTwoByTwoGrid)
@@ -28,7 +28,7 @@ const GameCard = ({ gameImages, gameTitle, gameDescription, backgroundImage }) =
       <div className="game-info-and-buttons-wrapper">
         <article className="game-info">
           {gameTitle && <img src={gameTitle} alt="Game Title" />}
-          <img src={gameDescription} alt="Game Description" />
+          <img className="description-only" src={gameDescription} alt="Game Description" />
         </article>
         <div className="game-buttons-wrapper">
           <img src="/LearnMore_Button.png" />
