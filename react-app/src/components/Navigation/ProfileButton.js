@@ -34,20 +34,47 @@ function ProfileButton({ user }) {
     dispatch(logout());
   };
 
+  const buttonStyle = {
+    background: "none",
+    border: "none",
+    color: "inherit",
+    cursor: "pointer",
+    fontSize: "24px",
+  };
+
+  const ulStyle = {
+    display: showMenu ? "block" : "none",
+    position: "absolute",
+    top: "40px",
+    right: "0",
+    backgroundColor: "#fff",
+    color: "#333",
+    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+    padding: "10px",
+    borderRadius: "5px",
+    zIndex: "1000",
+  };
+
+  const liStyle = {
+    padding: "10px 20px",
+    listStyleType: "none",
+  };
+
+
   const ulClassName = "profile-dropdown" + (showMenu ? "" : " hidden");
   const closeMenu = () => setShowMenu(false);
 
   return (
     <>
-      <button onClick={openMenu}>
+      <button onClick={openMenu} style={buttonStyle}>
         <i className="fas fa-user-circle" />
       </button>
-      <ul className={ulClassName} ref={ulRef}>
+      <ul className={ulClassName} ref={ulRef} style={ulStyle}>
         {user ? (
           <>
-            <li>{user.username}</li>
-            <li>{user.email}</li>
-            <li>
+            <li style={liStyle}>{user.username}</li>
+            <li style={liStyle}>{user.email}</li>
+            <li style={liStyle}>
               <button onClick={handleLogout}>Log Out</button>
             </li>
           </>
