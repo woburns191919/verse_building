@@ -28,19 +28,11 @@ function Navigation({ isLoaded }) {
           <NavLink exact to="/">
             Search
           </NavLink>
+          {isLoaded && <ProfileButton user={sessionUser} />}
         </div>
       </div>
     </main>
-    // <ul>
-    // 	<li>
-    // 		<NavLink exact to="/">Home!</NavLink>
-    // 	</li>
-    // 	{isLoaded && (
-    // 		<li>
-    // 			<ProfileButton user={sessionUser} />
-    // 		</li>
-    // 	)}
-    // </ul>
+ 
   );
 }
 
