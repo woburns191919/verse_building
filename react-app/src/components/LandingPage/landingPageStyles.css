@@ -1,0 +1,27 @@
+.landing-page-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  height: calc(100vh - 50px);
+}
+
+.aib-description-wrapper {
+  background-color: rgb(84, 84, 84);
+  color: white;
+}
+
+.map-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-wrapper img {
+  width: 800px;
+  height: 300px;
+}
+
+.aib-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

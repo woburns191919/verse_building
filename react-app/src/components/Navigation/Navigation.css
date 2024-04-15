@@ -1,0 +1,35 @@
+/* .profile-dropdown {
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+} */
+
+.nav-wrapper {
+  background-color:black;
+  justify-content: center;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  text-decoration:none;
+  align-items:center;
+  margin-left:5%;
+  margin-right:5%;
+
+}
+
+.nav-wrapper a {
+  text-decoration:none;
+  color:white;
+}
+
+.nav-right {
+  display:flex;
+  gap:10px;
+}
