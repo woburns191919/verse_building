@@ -1,23 +1,34 @@
 import "./gameCardStyles.css";
+import OpenModalButton from "../OpenModalButton";
+import ViewTrailer from "../ViewTrailer/ViewTrailer";
+import { Link } from "react-router-dom";
 
-const GameCard = ({ gameImages, gameTitle, gameDescription, backgroundImage }) => {
-
-  const defaultBackground = "bs-assets/CherryBlossom_Background.png"
+const GameCard = ({
+  gameImages,
+  gameTitle,
+  gameDescription,
+  backgroundImage,
+}) => {
+  const defaultBackground = "bs-assets/CherryBlossom_Background.png";
 
   const cardStyle = {
     backgroundImage: `url(${backgroundImage || defaultBackground})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
+    backgroundSize: "cover",
+    backgroundPosition: "center",
     // width:'20px'
   };
 
-
   const isTwoByTwoGrid = gameImages.length === 4;
-  console.log('blossom length', gameImages, isTwoByTwoGrid)
+  console.log("blossom length", gameImages, isTwoByTwoGrid);
 
   return (
-    <main className="game-card" >
-      <div style={cardStyle} className={`game-images-wrapper ${isTwoByTwoGrid ? 'two-by-two-grid' : ''}`}>
+    <main className="game-card">
+      <div
+        style={cardStyle}
+        className={`game-images-wrapper ${
+          isTwoByTwoGrid ? "two-by-two-grid" : ""
+        }`}
+      >
         {gameImages &&
           gameImages.map((src, i) => (
             <div key={i} className="game-image">
@@ -28,11 +39,21 @@ const GameCard = ({ gameImages, gameTitle, gameDescription, backgroundImage }) =
       <div className="game-info-and-buttons-wrapper">
         <article className="game-info">
           {gameTitle && <img src={gameTitle} alt="Game Title" />}
-          <img className="description-only" src={gameDescription} alt="Game Description" />
+          <img
+            className="description-only"
+            src={gameDescription}
+            alt="Game Description"
+          />
         </article>
         <div className="game-buttons-wrapper">
-          <img src="/LearnMore_Button.png" />
-          <img src="./ViewTrailer_Button.png" />
+          <Link to="/learn-more">
+            <img src="/LearnMore_Button.png" alt="Learn More" />
+          </Link>
+          <OpenModalButton
+            imageSrc="./ViewTrailer_Button.png"
+            buttonText="View Trailer"
+            modalComponent={<ViewTrailer />}
+          />
         </div>
       </div>
     </main>
