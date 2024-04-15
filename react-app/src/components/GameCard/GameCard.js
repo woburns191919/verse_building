@@ -8,7 +8,7 @@ const GameCard = ({ gameImages, gameTitle, gameDescription, backgroundImage }) =
     backgroundImage: `url(${backgroundImage || defaultBackground})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    width:'20px'
+    // width:'20px'
   };
 
 
@@ -17,7 +17,7 @@ const GameCard = ({ gameImages, gameTitle, gameDescription, backgroundImage }) =
 
   return (
     <main className="game-card" >
-      <div className={`game-images-wrapper ${isTwoByTwoGrid ? 'two-by-two-grid' : ''}`}>
+      <div style={cardStyle} className={`game-images-wrapper ${isTwoByTwoGrid ? 'two-by-two-grid' : ''}`}>
         {gameImages &&
           gameImages.map((src, i) => (
             <div key={i} className="game-image">
