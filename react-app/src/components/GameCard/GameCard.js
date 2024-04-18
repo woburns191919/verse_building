@@ -14,8 +14,9 @@ const GameCard = ({
   const cardStyle = {
     backgroundImage: `url(${backgroundImage || defaultBackground})`,
     backgroundSize: "cover",
-    backgroundPosition: "center",
-    // width:'20px'
+    // backgroundPosition: "center",
+    width:'100%',
+    maxWidth:'800px'
   };
 
   const isTwoByTwoGrid = gameImages.length === 4;
@@ -25,9 +26,7 @@ const GameCard = ({
     <main className="game-card">
       <div
         style={cardStyle}
-        className={`game-images-wrapper ${
-          isTwoByTwoGrid ? "two-by-two-grid" : ""
-        }`}
+        className="game-images-wrapper"
       >
         {gameImages &&
           gameImages.map((src, i) => (
