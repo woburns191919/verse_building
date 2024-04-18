@@ -23,7 +23,11 @@ function Navigation({ isLoaded }) {
       <div className="inner-nav-wrapper">
         <div className="nav-left">
           <NavLink exact to="/">
-            The Verse | AiB
+            The Verse
+          </NavLink>
+          <img src="../Tv_logo.png" />
+          <NavLink exact to="/">
+            AiB
           </NavLink>
         </div>
         <div className="nav-right">
@@ -35,6 +39,9 @@ function Navigation({ isLoaded }) {
           </NavLink>
           <NavLink exact to="/">
             Humzzz
+          </NavLink>
+          <NavLink exact to="/">
+            Contact
           </NavLink>
           <NavLink to="#" onClick={toggleSearch}>
             Search

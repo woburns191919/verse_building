@@ -1,10 +1,11 @@
 
 .nav-wrapper {
-  background-color: #333;
+  background-color: #375458;
   color: white;
-  height: 60px;
+  height: 126px;
   display: flex;
   flex-direction: column;
+  justify-content:center;
   align-items: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
@@ -20,6 +21,17 @@
 .nav-left, .nav-right {
   display: flex;
   align-items: center;
+
+}
+
+.nav-left {
+  font-size: 32px;
+  font-weight:700;
+}
+
+.nav-right {
+  font-size:20px;
+  font-weight: 600;
 }
 
 .nav-wrapper a {
@@ -31,9 +43,7 @@
   transition: background-color 0.3s ease;
 }
 
-.nav-wrapper a:hover, .nav-wrapper a.active {
-  background-color: #555;
-}
+
 
 .nav-right button {
   padding-left:20px;
