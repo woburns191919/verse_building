@@ -14,13 +14,10 @@ const GameCard = ({
   const cardStyle = {
     backgroundImage: `url(${backgroundImage || defaultBackground})`,
     backgroundSize: "cover",
-    // backgroundPosition: "center",
     width:'100%',
-    maxWidth:'800px'
   };
 
-  const isTwoByTwoGrid = gameImages.length === 4;
-  console.log("blossom length", gameImages, isTwoByTwoGrid);
+
 
   return (
     <main className="game-card">

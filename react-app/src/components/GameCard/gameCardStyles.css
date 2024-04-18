@@ -1,10 +1,8 @@
 
-.game-image img {
-  width:30%;
-  height:30%;
+.game-images-wrapper {
+  display:flex;
+  align-items:center
 }
-
-
 
 .game-image img {
   width: 100%;
