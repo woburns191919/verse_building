@@ -7,20 +7,23 @@
 }
 
 .aib-description-wrapper {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #21395B;
   color: white;
   padding: 2rem;
   text-align: center;
 }
 
 .aib-description h4 {
-  font-size: 1.5rem;
-  color: #FFD700;
+  font-size: 24px;
+  font-weight:700;
+  color: #ED8458;
   margin-bottom: 0.5rem;
 }
 
 .aib-description h2 {
-  font-size: 2.5rem;
+
+  font-size: 36px;
+  font-weight:700;
   margin-bottom: 1rem;
   font-weight: bold;
 }
