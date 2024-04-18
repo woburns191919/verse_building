@@ -13,6 +13,55 @@ function SignupFormModal() {
 	const [errors, setErrors] = useState([]);
 	const { closeModal } = useModal();
 
+	const modalStyle = {
+    backgroundColor: "#282c34",
+    borderRadius: "10px",
+    padding: "30px",
+    boxShadow: "0 8px 25px rgba(0, 0, 0, 0.2)",
+    color: "#FFF"
+  };
+
+  const formStyle = {
+    display: "flex",
+    flexDirection: "column",
+    gap: "10px",
+    alignItems: "center",
+  };
+
+  const inputStyle = {
+    width: "100%",
+    padding: "12px 20px",
+    margin: "8px 0",
+    border: "2px solid #61dafb",
+    borderRadius: "6px",
+    background: "#333842",
+    color: "white"
+  };
+
+  const buttonStyle = {
+    backgroundColor: "#61dafb",
+    color: "#282c34",
+    padding: "12px 24px",
+    border: "none",
+    borderRadius: "6px",
+    cursor: "pointer",
+    fontWeight: "bold",
+    textTransform: "uppercase",
+    transition: "background-color 0.3s",
+    ":hover": {
+      backgroundColor: "#21a1f1"
+    }
+  };
+
+  const errorStyle = {
+    color: "red",
+    fontSize: "0.9em",
+    margin: "5px 0",
+    fontWeight: "600",
+    textAlign: "center"
+  };
+
+
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		if (password === confirmPassword) {
