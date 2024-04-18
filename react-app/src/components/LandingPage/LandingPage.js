@@ -51,45 +51,32 @@ const LandingPage = () => {
           <div className="footer-mid-left">
             <div className="first-in-footer-mid-left">
               <h5>The Verse</h5>
-              <p>
-                AiB Team Members
-              </p>
+              <p>AiB Team Members</p>
             </div>
 
             <div className="second-in-footer-mid-left">
               <h5>Information</h5>
-              <p>
-                Privacy & Terms
-              </p>
+              <p>Privacy & Terms</p>
             </div>
 
             <div className="third-in-footer-mid-left">
               <h5>Resources</h5>
-              <p>
-                Contact
-              </p>
+              <p>Contact</p>
             </div>
           </div>
-          <div className="footer-mid-right">
-            {/* empty div for spacing */}
-          </div>
+          <div className="footer-mid-right">{/* empty div for spacing */}</div>
         </div>
 
         <div className="footer-bottom">
-          <div className="logos-footer-botom">
+          <div className="logos-footer-bottom">
             <img src="../X.png"></img>
             <img src="../IG.png"></img>
             <img src="../LinkedIn.png"></img>
-
           </div>
 
           <div className="copyright-footer-bottom">
-          <p>
-            Copyright @ The Verse 2024
-          </p>
+            <p>Copyright @ The Verse 2024</p>
           </div>
-
-
         </div>
       </footer>
     </main>
