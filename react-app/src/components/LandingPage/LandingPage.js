@@ -1,4 +1,6 @@
 import "./landingPageStyles.css";
+import OpenModalButton from "../OpenModalButton";
+import SignupFormModal from "../SignupFormModal";
 
 const LandingPage = () => {
   return (
@@ -42,7 +44,11 @@ const LandingPage = () => {
           <div className="footer-top-right">
             <div className="search-and-sign-up">
               <input placeholder="Email Address"></input>
-              <img src="../SignUpButton.png"></img>
+              <OpenModalButton
+                imageSrc="../SignUpButton.png"
+                buttonText="Sign up button"
+                modalComponent={<SignupFormModal />}
+              />
             </div>
           </div>
         </div>
