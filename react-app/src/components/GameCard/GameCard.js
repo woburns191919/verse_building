@@ -29,8 +29,8 @@ const GameCard = ({
       </div>
       <div className="game-info-and-buttons-wrapper">
         <article className="game-info">
-        {gameTitle && <img src={gameTitle} alt="Game Title" />}
-          <p>game</p>
+          {gameTitle && <img src={gameTitle} alt="Game Title" />}
+          <p className="description-only">{gameDescription}</p>
         </article>
         <div className="game-buttons-wrapper">
           <Link to="/learn-more">
