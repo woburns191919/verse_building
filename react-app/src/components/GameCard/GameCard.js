@@ -14,17 +14,12 @@ const GameCard = ({
   const cardStyle = {
     backgroundImage: `url(${backgroundImage || defaultBackground})`,
     backgroundSize: "cover",
-    width:'100%',
+    width: "100%",
   };
-
-
 
   return (
     <main className="game-card">
-      <div
-        style={cardStyle}
-        className="game-images-wrapper"
-      >
+      <div style={cardStyle} className="game-images-wrapper">
         {gameImages &&
           gameImages.map((src, i) => (
             <div key={i} className="game-image">
@@ -34,12 +29,8 @@ const GameCard = ({
       </div>
       <div className="game-info-and-buttons-wrapper">
         <article className="game-info">
-          {gameTitle && <img src={gameTitle} alt="Game Title" />}
-          <img
-            className="description-only"
-            src={gameDescription}
-            alt="Game Description"
-          />
+        {gameTitle && <img src={gameTitle} alt="Game Title" />}
+          <p>game</p>
         </article>
         <div className="game-buttons-wrapper">
           <Link to="/learn-more">
