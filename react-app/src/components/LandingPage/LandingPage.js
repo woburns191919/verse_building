@@ -14,7 +14,7 @@ const LandingPage = () => {
       </div>
 
       <div className="description-and-pic-wrapper">
-        <div className="aib-description-wrapper">
+        <div className="aib-description-wrapper2">
           <article className="aib-description">
             <h4>ADVENTURES IN BREATH</h4>
             <h2>EXPLORE THE LAND, AIR, AND SEA</h2>

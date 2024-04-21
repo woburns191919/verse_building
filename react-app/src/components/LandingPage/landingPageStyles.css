@@ -9,7 +9,17 @@
   color: white;
   padding: 2rem;
   text-align: center;
+  padding-bottom:10%;
+  padding-top:10%;
 
+
+}
+.aib-description-wrapper2 {
+  background-color: #21395b;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  width:50%
 }
 
 .aib-description img {
@@ -46,6 +56,9 @@
 
 .landing-page-right-pic img {
   width: 100%;
+}
+.landing-page-right-pic {
+  width: 50%;
 }
 
 .contact-us {
