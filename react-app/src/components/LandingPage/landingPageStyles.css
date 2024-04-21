@@ -11,6 +11,10 @@
   text-align: center;
 }
 
+.aib-description img {
+  padding-top: 20px;
+}
+
 .aib-description h4 {
   color: #ed8458;
   font-weight: 700;
