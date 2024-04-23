@@ -14,21 +14,12 @@ const GameCard = ({
   const cardStyle = {
     backgroundImage: `url(${backgroundImage || defaultBackground})`,
     backgroundSize: "cover",
-    backgroundPosition: "center",
-    // width:'20px'
+    width: "100%",
   };
-
-  const isTwoByTwoGrid = gameImages.length === 4;
-  console.log("blossom length", gameImages, isTwoByTwoGrid);
 
   return (
     <main className="game-card">
-      <div
-        style={cardStyle}
-        className={`game-images-wrapper ${
-          isTwoByTwoGrid ? "two-by-two-grid" : ""
-        }`}
-      >
+      <div style={cardStyle} className="game-images-wrapper">
         {gameImages &&
           gameImages.map((src, i) => (
             <div key={i} className="game-image">
@@ -39,11 +30,7 @@ const GameCard = ({
       <div className="game-info-and-buttons-wrapper">
         <article className="game-info">
           {gameTitle && <img src={gameTitle} alt="Game Title" />}
-          <img
-            className="description-only"
-            src={gameDescription}
-            alt="Game Description"
-          />
+          <p className="description-only">{gameDescription}</p>
         </article>
         <div className="game-buttons-wrapper">
           <Link to="/learn-more">

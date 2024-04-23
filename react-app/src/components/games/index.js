@@ -1,6 +1,3 @@
-import "./gamesPageStyles.css";
-import GameCard from "../GameCard/GameCard";
-
 const games = [
   {
     backgroundImage: "sb-assets/Wave_Pattern.png",
@@ -34,16 +31,4 @@ const games = [
   },
 ];
 
-const GamesPage = () => {
-  return (
-    <main className="games-page-wrapper">
-      <div className="game-cards">
-        {games.map((game, index) => (
-          <GameCard key={index} {...game} />
-        ))}
-      </div>
-    </main>
-  );
-};
-
-export default GamesPage;
+export default games
