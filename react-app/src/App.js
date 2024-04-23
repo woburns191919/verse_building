@@ -7,6 +7,8 @@ import { authenticate } from "./store/session";
 import Navigation from "./components/Navigation";
 import LandingPage from "./components/LandingPage/LandingPage";
 import GamesPage from "./components/GamesPage/GamesPage";
+import PitchVisualizerPage from "./components/PitchVisualizerPage/PitchVisualizerPage";
+
 
 function App() {
   const dispatch = useDispatch();
@@ -25,6 +27,9 @@ function App() {
           </Route>
           <Route exact path="/games">
             <GamesPage />
+          </Route>
+          <Route exact path="/humzzz">
+            <PitchVisualizerPage />
           </Route>
           <Route path="/login" >
             <LoginFormPage />
