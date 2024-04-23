@@ -37,7 +37,7 @@ function Navigation({ isLoaded }) {
           <NavLink exact to="/games">
             Games
           </NavLink>
-          <NavLink exact to="/">
+          <NavLink exact to="/humzzz">
             Humzzz
           </NavLink>
           <NavLink exact to="/">
