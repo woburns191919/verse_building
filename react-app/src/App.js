@@ -7,7 +7,6 @@ import LandingPage from "./components/LandingPage/LandingPage";
 import GamesPage from "./components/GamesPage/GamesPage";
 import PitchVisualizerPage from "./components/PitchVisualizerPage/PitchVisualizerPage";
 
-
 function App() {
   const dispatch = useDispatch();
   const [isLoaded, setIsLoaded] = useState(false);
@@ -30,15 +29,6 @@ function App() {
           <Route exact path="/humzzz">
             <PitchVisualizerPage />
           </Route>
-          <Route path="/login" >
-
-          {/* <Route path="/login" >
-
-            <LoginFormPage />
-          </Route>
-          <Route path="/signup">
-            <SignupFormPage />
-          </Route> */}
         </Switch>
       )}
     </>
